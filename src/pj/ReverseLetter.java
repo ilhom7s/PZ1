@@ -2,6 +2,9 @@ package pj;
 
 public class ReverseLetter {
     public String reverse(String s){
+        if (s==null){
+            throw new IllegalArgumentException("Метод получил null");
+        }
         int left = 0;
         int right = s.length()-1;
         char[] chars = s.toCharArray();
